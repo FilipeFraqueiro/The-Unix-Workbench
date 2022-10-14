@@ -2,8 +2,7 @@ n=$(ls -p | grep -v / | wc -l)
 # echo $n
 
 function test() {
-	echo "Guess:"
-	read in
+	read -p "Guess: " in
 	# echo $in
 
 	if [ $n -eq $in ]
